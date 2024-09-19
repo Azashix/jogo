@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Investigação do Roubo do Diamante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Introdução -->
+        <div id="introducao" class="passo ativo">
+            <h1>Investigação do Roubo do Diamante</h1>
+            <p>Um valioso diamante foi roubado de um museu. O detetive é chamado para investigar.</p>
+
+            <!-- Adicionando uma imagem na introdução -->
+            <div class="imagem-container">
+                <img src="img/diamante-roubado.jpg" alt="">
+            </div>
+
+            <!-- Botão para começar a investigação -->
+            <button class="btn-proximo" data-proximo="passo-1">Começar Investigação</button>
+        </div>
+
+        <!-- Passo 1 -->
+        <div id="passo-1" class="passo">
+            <img src="img/pensando.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>Passo 1: O que você vai fazer?</h2>
+            <p>Escolha uma das opções abaixo:</p>
+            <button class="btn-proximo" data-proximo="passo-2">Examinar a Área ao Redor do Diamante</button>
+            <button class="btn-proximo" data-proximo="passo-2">Interrogar os Guardas de Segurança</button>
+        </div>
+
+        <!-- Passo 2: Consequência de Examinar a Área ao Redor do Diamante -->
+        <div id="passo-2" class="passo">
+            <img src="img/luva-caida.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>O detetive encontra uma luva caída perto do pedestal vazio.</h2>
+            <p>O que você vai fazer agora?</p>
+            <button class="btn-proximo" data-proximo="passo-3">Enviar a Luva para Análise de Impressões Digitais</button>
+            <button class="btn-proximo" data-proximo="passo-4">Ignorar a Luva e Continuar Investigando</button>
+        </div>
+
+        <!-- Passo 3: Consequência de Analisar Impressões Digitais -->
+        <div id="passo-3" class="passo">
+            <img src="img/impressao-digital.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>O detetive recebe os resultados da análise da luva.</h2>
+            <p>O que você vai fazer agora?</p>
+            <button class="btn-proximo" data-proximo="passo-7">Seguir o Dono das Impressões Digitais</button>
+            <button class="btn-proximo" data-proximo="passo-8">Procurar Mais Pistas no Museu</button>
+        </div>
+
+        <!-- Passo 4: Consequência de Ignorar a Luva -->
+        <div id="passo-4" class="passo">
+            <img src="img/ignorar-luva2.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>Você decide ignorar a luva e continuar investigando.</h2>
+            <button class="btn-proximo" data-proximo="passo-5">Verificar as Câmeras de Segurança</button>
+        </div>
+
+        <!-- Passo 5: Consequência de Verificar as Câmeras de Segurança -->
+        <div id="passo-5" class="passo">
+            <img src="img/suspeito-cameras.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>O detetive identifica um suspeito que sai do museu de maneira suspeita.</h2>
+            <p>O que você vai fazer agora?</p>
+            <button class="btn-proximo" data-proximo="passo-6">Criar um Retrato Falado com Base na Descrição</button>
+        </div>
+
+        <!-- Passo 6: Consequência de Criar um Retrato Falado -->
+        <div id="passo-6" class="passo">
+            <img src="img/retrato-falado.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>A polícia identifica o suspeito como um ladrão conhecido.</h2>
+            <button class="btn-proximo" data-proximo="passo-10">Seguir os Passos do Suspeito</button>
+        </div>
+
+        <!-- Passo 7: Consequência de Seguir o Dono das Impressões Digitais -->
+        <div id="passo-7" class="passo">
+            <img src="img/impressao-digital.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>A luva pertence a um funcionário do museu.</h2>
+            <p>O que você vai fazer agora?</p>
+            <button class="btn-proximo" data-proximo="passo-11">Interrogar o Funcionário</button>
+            <button class="btn-proximo" data-proximo="passo-12">Monitorar o Funcionário Secretamente</button>
+        </div>
+
+        <!-- Passo 8: Procurar Mais Pistas no Museu -->
+        <div id="passo-8" class="passo">
+            <img src="img/investigar.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>Você decide procurar mais pistas no museu, mas não encontra nada de novo.</h2>
+            <p>Você volta para a última decisão importante.</p>
+            <button class="btn-proximo" data-proximo="passo-7">Voltar ao Passo Anterior</button>
+        </div>
+
+        <!-- Passo 9: Esperar Mais Evidências -->
+        <div id="passo-9" class="passo">
+            <img src="img/nova-impressao-digital.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>O detetive encontra uma nova luva no museu e a analisa.</h2>
+            <p>A análise revela que a luva pertence a um funcionário do museu.</p>
+            <button class="btn-proximo" data-proximo="passo-7">Seguir o Dono das Impressões Digitais</button>
+        </div>
+
+        <!-- Passo 10: Seguir os Passos do Suspeito -->
+        <div id="passo-10" class="passo">
+            <img src="img/monitoramento.jpg" alt="Área ao Redor do Diamante" class="imagem-lado">
+            <h2>O detetive segue os passos do suspeito e encontra mais evidências no museu.</h2>
+            <p>A luva pertence a um funcionário do museu.</p>
+            <button class="btn-proximo" data-proximo="passo-7">Seguir o Dono das Impressões Digitais</button>
+        </div>
+
+        <!-- Passo 11: Final: Interrogar o Funcionário -->
+        <div id="passo-11" class="passo">
+            <h2>O detetive confronta o funcionário, que confessa ser cúmplice e revela a localização do diamante. Caso resolvido!</h2>
+            <p>Parabéns, você resolveu o caso!</p>
+        </div>
+
+        <!-- Passo 12: Final: Monitorar o Funcionário Secretamente -->
+        <div id="passo-12" class="passo">
+            <h2>O detetive monitora o funcionário, que confessa ser cúmplice e revela a localização do diamante. Caso resolvido!</h2>
+            <p>Parabéns, você resolveu o caso!</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
